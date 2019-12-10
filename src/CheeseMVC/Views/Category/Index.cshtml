@@ -1,0 +1,11 @@
+﻿@using CheeseMVC.Models
+@model List<CheeseCategory>
+
+<h2>Category Names</h2>
+
+<ul>
+    @foreach (var cat in Model)
+    {
+        <li>@cat.Name</li>
+    }
+</ul>
