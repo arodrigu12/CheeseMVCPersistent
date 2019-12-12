@@ -1,4 +1,6 @@
-﻿namespace CheeseMVC.Models
+﻿using System.Collections.Generic;
+
+namespace CheeseMVC.Models
 {
     public class Cheese
     {
@@ -11,5 +13,7 @@
         
         //Foreign key propperty
         public int CategoryID { get; set; }
+
+        public IList<CheeseMenu> CheeseMenus { get; set; } = new List<CheeseMenu>();
     }
 }
