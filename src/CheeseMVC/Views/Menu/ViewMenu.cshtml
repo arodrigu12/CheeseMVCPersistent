@@ -12,6 +12,11 @@
     </ul>
 }
 
+@if (Model.Items.Count == 0)
+{
+    <p>No menu items</p>
+}
+
 <p><a asp-controller="Menu" asp-action="AddItem" asp-route-id="@Model.Menu.ID">Add Item to Menu</a></p>
 
 
