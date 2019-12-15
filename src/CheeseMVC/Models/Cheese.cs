@@ -14,6 +14,6 @@ namespace CheeseMVC.Models
         //Foreign key propperty
         public int CategoryID { get; set; }
 
-        public IList<CheeseMenu> CheeseMenus { get; set; } = new List<CheeseMenu>();
+        public IList<CheeseMenu> CheeseMenus { get; set; }
     }
 }
