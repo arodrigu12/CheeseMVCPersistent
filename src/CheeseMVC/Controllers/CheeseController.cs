@@ -61,8 +61,10 @@ namespace CheeseMVC.Controllers
         public IActionResult Remove()
         {
             ViewBag.title = "Remove Cheeses";
-            ViewBag.cheeses = context.Cheeses.ToList();
-            return View();
+            //ViewBag.cheeses = context.Cheeses.ToList();
+            //return View();
+            IList<Cheese> cheeses = context.Cheeses.ToList();
+            return View(cheeses);
         }
 
         [HttpPost]
